@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 100px;
+    margin: 10px auto;
+    padding: 0 20px;
+  }
+  
+  .img img {
+    width: 100%;
+  }
+  
+  .txt {
+    max-width: 537px;
+    width: 100%;
+    min-height: 10px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .txt_content p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #707070;
+  }
+  .txt_content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+  }
+  
+  form {
+    max-width: 315px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border: 1px solid gray;
+  }
+  
+  .btn:nth-child(2) {
+    background: rgb(255, 255, 255);
+  }
+  .btn:nth-child(3) {
+    background: rgb(178, 107, 68);
+  }
+  
+  .btn input {
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+  }
+
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(146, 143, 143, 0.783); 
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+  }
+  
+  input[type="checkbox"]:checked + .slider {
+    background-color: rgb(49, 103, 238);
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .elem {
+    margin-bottom: 30px;
+  }
+  .gr {
+   color: grey;
+   font-size: 16px; 
+  }
